@@ -10,7 +10,7 @@ Do you find yourself:
 Then KeePass Web may be for you!
 
 Keep reading to learn more about:
-* [Our motivation for building this software](./TODO.md)
+* [Our motivation for building this software](./RATIONALE.md)
 * [Our dual licensing model](./TODO.md)
 * [Our design and development philosophies](./TODO.md)
 
