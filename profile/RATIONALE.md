@@ -1,6 +1,6 @@
 # Rationale, or Why Bother?
 
-The [KeePass 2.x database file format (KDBX)][ref1] securely stores user name,
+The [KeePass 2.x database file format (KDBX)][ref1] securely stores user names,
 passwords, and other information in a local file using strong encryption and
 tamper-evident protections. The open source [KeePass for Windows][ref2] program
 maintains this format specification, offers a reference implementation, and
