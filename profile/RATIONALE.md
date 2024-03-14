@@ -10,8 +10,10 @@ Native applications, official or not, present several challenges. For one, not
 all systems allow third-party software installation. For another, the user
 interface differs between each KDBX-compatible application. Additionally, the
 implementations are of varying quality: lots of open issues, discontinued
-development, no installers or complex installation steps. Finally, are the
-applications, whether closed- or open-source, trust-worthy?
+development, no installers or complex installation steps. Also, incompatibilities
+between differing KDBX reader/writer implementations may result in database errors
+or corruption. Finally, are the applications, whether closed- or open-source,
+trustworthy?
 
 Given these challenges, a browser-based KeePass application seems like the ideal
 interface for reading and writing a local KDBX file. Browsers are ubiquitous,
