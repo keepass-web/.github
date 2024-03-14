@@ -1,10 +1,10 @@
 # Rationale, or Why Bother?
 
-The [KeePass 2.x database file format (KDBX)][^1] securely stores user name,
+The [KeePass 2.x database file format (KDBX)][ref1] securely stores user name,
 passwords, and other information in a local file using strong encryption and
-tamper-evident protections. The open source [KeePass for Windows][^2] program
+tamper-evident protections. The open source [KeePass for Windows][ref2] program
 maintains this format specification, offers a reference implementation, and
-links to [unofficial ports][^3] for other platforms.
+links to [unofficial ports][ref3] for other platforms.
 
 Native applications, official or not, present several challenges. For one, not
 all systems allow third-party software installation. For another, the user
@@ -19,10 +19,10 @@ richly interactive, and inherently open: network traffic is inspectable and
 source code is run locally.
 
 However, the existing browser-based KeePass applications listed on the
-[unofficial ports page][^3] suffer from similar challenges (as of March, 2024):
-* [Keeweb][^4] has over 350 open issues and is two years out of date
-* [Keevalut.pm][^5] is closed source and crashes in DuckDuckGo
-* [Keepass for Web][^6] is abandoned and the Rust rewrite, frighteningly, has
+[unofficial ports page][ref3] suffer from similar challenges (as of March, 2024):
+* [Keeweb][ref4] has over 350 open issues and is two years out of date
+* [Keevalut.pm][ref5] is closed source and crashes in DuckDuckGo
+* [Keepass for Web][ref6] is abandoned and the Rust rewrite, frighteningly, has
   rolled its own "new and unique encryption key"
 
 With nothing on the market to satisfy the design goals, it was time to build a
@@ -31,9 +31,9 @@ KDBX-compatible application that is:
 * Source available, to ensure the code is trustworthy
 * Hacker verified, to ensure the code is secure
 
-[^1]:https://keepass.info/help/kb/kdbx.html
-[^2]:https://keepass.info/
-[^3]:https://keepass.info/download.html
-[^4]:https://github.com/keeweb/keeweb
-[^5]:https://keevault.pm/
-[^6]:https://github.com/lixmal/keepass4web/?tab=readme-ov-file
+[ref1]:https://keepass.info/help/kb/kdbx.html
+[ref2]:https://keepass.info/
+[ref3]:https://keepass.info/download.html
+[ref4]:https://github.com/keeweb/keeweb
+[ref5]:https://keevault.pm/
+[ref6]:https://github.com/lixmal/keepass4web/?tab=readme-ov-file
