@@ -21,9 +21,10 @@ richly interactive, and inherently open: network traffic is inspectable and
 source code is run locally.
 
 However, the existing browser-based KeePass applications listed on the
-[unofficial ports page][ref3] suffer from similar challenges (as of March, 2024):
+[KeePass for Windows unofficial ports page][ref3] suffer from similar challenges
+(as of March, 2024):
 * [Keeweb][ref4] has over 350 open issues and is two years out of date
-* [Keevalut.pm][ref5] is closed source and crashes in DuckDuckGo
+* [Keevault.pm][ref5] is closed source and crashes in DuckDuckGo
 * [Keepass for Web][ref6] is abandoned and the Rust rewrite, frighteningly, has
   rolled its own "new and unique encryption key"
 
