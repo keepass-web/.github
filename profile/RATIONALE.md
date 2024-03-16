@@ -40,8 +40,8 @@ quality, stability or security of other KDBX-compatible clients, then KeePass
 Web is for you!
 
 Find out more:
-* [Our design and development philosophies](/profile/PHILOSOPHY.md)
-* [Our dual licensing model](/profile/TODO.md)
+* [Our design and development philosophies.](/profile/PHILOSOPHY.md)
+* [Our dual licensing model.](/profile/TODO.md)
 
 Ready to start?
 * [Try KeePass Web online, in your browser, right now.](/profile/TODO.md)
