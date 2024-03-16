@@ -4,7 +4,7 @@
 
 Do you find yourself:
 * Wanting complete control over where your passwords are stored?
-* Unable or unwilling to install a local application?
+* Unable or unwilling to install a native application?
 * Distrusting software that handles your passwords?
 
 Then KeePass Web may be for you!
