@@ -33,6 +33,26 @@ KDBX-compatible application that is:
 * Source available, to ensure the code is trustworthy
 * Hacker verified, to ensure the code is secure
 
+If you find yourself wanting complete control over where your passwords are
+stored, unable or unwilling to install a native application, and distrusting the
+quality, stability or security of other KDBX-compatible clients, then KeePass
+Web is for you!
+
+Find out more:
+* [Our design and development philosophies](/profile/PHILOSOPHY.md)
+* [Our dual licensing model](/profile/TODO.md)
+
+Ready to start?
+* [Try KeePass Web online, in your browser, right now.](/profile/TODO.md)
+* [Download the most recent public release and run in your local browser.](/profile/TODO.md)
+* [Subscribe to our Patreon and get the latest features.](/profile/TODO.md)
+
+Not convinced?
+* [Check out our Frequently Asked Questions.](/profile/FAQ.md)
+* [Read testimonies from patreons who support KeePass Web development.](/profile/TODO.md)
+* [See our awards and accolades.](/profile/TODO.md)
+
+
 [ref1]:https://keepass.info/help/kb/kdbx.html
 [ref2]:https://keepass.info/
 [ref3]:https://keepass.info/download.html

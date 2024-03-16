@@ -10,16 +10,16 @@ Do you find yourself:
 Then KeePass Web may be for you!
 
 Keep reading to learn more about:
-* [Our motivation for building this software](/profile/RATIONALE.md)
-* [Our dual licensing model](/profile/TODO.md)
-* [Our design and development philosophies](/profile/TODO.md)
+* [Our motivation for building this software.](/profile/RATIONALE.md)
+* [Our design and development philosophies.](/profile/PHILOSOPHY.md)
+* [Our dual licensing model.](/profile/TODO.md)
 
 Ready to start?
 * [Try KeePass Web online, in your browser, right now.](/profile/TODO.md)
-* [Download the latest public release and run in your local browser.](/profile/TODO.md)
-* [Subscribe to our Patreon and get the latest private release.](/profile/TODO.md)
+* [Download the most recent public release and run in your local browser.](/profile/TODO.md)
+* [Subscribe to our Patreon and get the latest features.](/profile/TODO.md)
 
 Not convinced?
-* [Check out our Frequently Asked Questions](/profile/FAQ.md)
-* [Read testimonies from patreons who support KeePass Web development](/profile/TODO.md)
-* [See our awards and accolades](/profile/TODO.md)
+* [Check out our Frequently Asked Questions.](/profile/FAQ.md)
+* [Read testimonies from patreons who support KeePass Web development.](/profile/TODO.md)
+* [See our awards and accolades.](/profile/TODO.md)
