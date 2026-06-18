@@ -94,8 +94,8 @@ Ready to start?
 
 Not convinced?
 * [Check out our Frequently Asked Questions.](/profile/FAQ.md)
-* [Read testimonies from sponsors who support KeePass Web development.](/profile/TODO.md)
-* [See our awards and accolades.](/profile/TODO.md)
+<!-- * [Read testimonies from sponsors who support KeePass Web development.](/profile/TODO.md) -->
+<!-- * [See our awards and accolades.](/profile/TODO.md) -->
 
 
 [ref1]:https://keepass.info/help/kb/kdbx.html
