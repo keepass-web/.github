@@ -8,7 +8,10 @@ core principles drive every decision made for KeePass Web.
 
 Impeccability refers to the state of being "without mistakes or faults"[^1] and
 manifests itself in KeePass Web through:
-* Test coverage exceeding 95% of possible paths.
+* 100% test coverage — every path, branch, and edge case. With modern AI-assisted
+  development, there is no excuse for leaving code untested.
+* Enforced code style through automated linting and formatting. No exceptions, no
+  overrides, no "we'll fix it later."
 * Documentation that is easy to use, understand, and find[^2].
 * No more than 5 verified open issues more than 90 days old across all the
   organization.
