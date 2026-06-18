@@ -1,30 +1,29 @@
 # Licensing, and the KeePass Web Business Model
 
-Let's be honest up-front: KeePass Web is a business. We charge you a subscription
-to use our software. We use that money to build impeccable software that you can
-trust.
+Let's be honest up-front: KeePass Web is a business. We use subscription revenue
+to build impeccable software that you can trust.
 
 We believe that password and secret management software is too important to be
 poorly done because of lack of funding. But, conversely, we believe walling it
 behind a proprietary corporate shield is wrong: allegiance to shareholders
-shifts focus from security to profit. To balance these beliefs, we use a dual
-license model.
+shifts focus from security to profit. To balance these beliefs, we use an open
+core model.
 
-## Dual license model
+## Open Core Model
 
-* Patrons, who pay a monthly subscription fee, get access to the latest features,
-bug fixes, and security patches. Access is available through a private GitHub
-repository (for the Patron to download and run locally, if wished) and a
-Patrons-only area of our [online version][kpo]. This software is licensed under
-a proprietary license and comes with an End-User License Agreement.
+The core of KeePass Web — the single HTML file that reads and writes KDBX
+databases in your browser — is free and open source under the [MIT license][mit],
+always. It is never paywalled, never time-delayed, and always current. Security
+fixes ship to everyone immediately.
 
-* Every year, on January 1, we snapshot the latest stable release and re-license
-it under the [MIT license][mit]. This snapshot we then publish in a public GitHub
-repository and at our [online version][kpo].
+Premium features are available to [GitHub Sponsors][ghs]. Sponsoring gives you
+access to [keepass.online][kpo], which connects KeePass Web to your own cloud
+storage provider (Google Drive, Dropbox, OneDrive, or similar) so you can access
+your KDBX database from any browser, anywhere, without transferring files
+manually.
 
-In short, Patrons get maximum features, security, and convenience in exchange
-for their subscription. Everyone else gets a reliable password manager that's up
-to a year out of date.
+In short: the tool is free. The convenience is not.
 
 [kpo]:https://keepass.online/
 [mit]:https://mit-license.org/
+[ghs]:https://github.com/sponsors/keepass-web
