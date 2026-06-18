@@ -17,7 +17,7 @@ Keep reading to learn more about:
 Ready to start?
 * [Try KeePass Web online, in your browser, right now.](/profile/TODO.md)
 * [Download the most recent public release and run in your local browser.](/profile/TODO.md)
-* [Become a GitHub Sponsor to unlock convenience features.](/profile/TODO.md)
+* [Become a GitHub Sponsor to unlock convenience features.](https://github.com/sponsors/keepass-web)
 
 Not convinced?
 * [Check out our Frequently Asked Questions.](/profile/FAQ.md)

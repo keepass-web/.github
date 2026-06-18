@@ -27,3 +27,4 @@ In short: the tool is free. The convenience is not.
 [kpo]:https://keepass.online/
 [mit]:https://mit-license.org/
 [ghs]:https://github.com/sponsors/keepass-web
+
