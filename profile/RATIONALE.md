@@ -90,7 +90,7 @@ Find out more:
 Ready to start?
 * [Try KeePass Web online, in your browser, right now.](/profile/TODO.md)
 * [Download the most recent public release and run in your local browser.](/profile/TODO.md)
-* [Become a GitHub Sponsor to unlock premium features.](/profile/TODO.md)
+* [Become a GitHub Sponsor to unlock convenience features.](/profile/TODO.md)
 
 Not convinced?
 * [Check out our Frequently Asked Questions.](/profile/FAQ.md)
