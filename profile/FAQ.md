@@ -1,84 +1,120 @@
 # Frequently Asked Questions
 
-## What is KeePass Web?
+## General
+
+### What is KeePass Web?
 
 KeePass Web is a password manager that runs entirely in your web browser. It
 reads and writes [KDBX][kdbx] database files — the same format used by KeePass,
 KeePassXC, Strongbox, KeePassium, and others. It ships as a single HTML file
 with no external dependencies.
 
-## What is a KDBX file?
+### What is a KDBX file?
 
 KDBX is an open, well-documented file format for storing passwords and secrets.
 It uses strong encryption and tamper-evident protections. Because it is an open
 format, many independent applications can read and write it. Your passwords are
 not locked to any single vendor — including us.
 
-## What browsers are supported?
+### What browsers are supported?
 
 Any modern desktop browser that supports [WebCrypto][webcrypto]: Chrome, Firefox,
 Safari, Edge, and terminal browsers such as Browsh and Carbonyl. WebCrypto is the
 only browser API KeePass Web requires.
 
-## How do I know it's safe?
+### How do I know it's safe?
 
 You don't have to take our word for it. The entire application is a single,
 un-minified HTML file. Open it in a text editor before you open your database.
-Watch the browser network tab while it runs — you will see no network requests
-for the free local version. The source code is published on GitHub and the
-application is periodically subjected to independent security research through a
-funded bug bounty program.
+Watch the browser network tab while it runs — you will see no outbound network
+requests. The source code is published on GitHub and the application is
+periodically subjected to independent security research through a funded bug
+bounty program.
 
-## Does keepassweb.app ever see my passwords?
-
-No. Decryption happens entirely in your browser. Your master password is never
-transmitted. Your KDBX file is fetched directly from your cloud storage provider
-(Google Drive, Dropbox, OneDrive, etc.) by your browser — it does not pass
-through our servers. You can verify this by watching the network tab: after the
-initial page load, no requests are made to keepassweb.app.
-
-## What is the difference between the free version and the premium version?
-
-The free version is a single HTML file you download and open locally. It works
-with any KDBX file on your machine. Nothing leaves your computer.
-
-The premium version is available at [keepassweb.app][kpo] to
-[GitHub Sponsors][ghs]. It connects KeePass Web to your own cloud storage
-provider so you can access your KDBX database from any browser, anywhere,
-without manually transferring files. Your data stays in your storage — we never
-hold it.
-
-## What cloud storage providers are supported?
-
-Google Drive, Dropbox, and OneDrive. Support for WebDAV (Nextcloud, ownCloud,
-and similar) is planned.
-
-## What happens if keepassweb.app shuts down?
-
-Your KDBX file stays in your cloud storage provider — it was never ours to begin
-with. Open it in KeePassXC, Strongbox, KeePassium, or any other KDBX-compatible
-client. You are never locked in.
-
-## Why did you write your own KDBX parser instead of using an existing library?
+### Why did you write your own KDBX parser instead of using an existing library?
 
 Security software that depends on third-party libraries inherits that library's
 security fix schedule. If a vulnerability is discovered in a dependency, we are
 blocked on someone else's availability and priorities to ship a fix. By owning
 the parser ourselves, we control when fixes ship.
 
-## Why no JavaScript or CSS frameworks?
+### Why no JavaScript or CSS frameworks?
 
 Every dependency is an attack surface and code you cannot fully audit. We keep
 the codebase small enough that a technically literate user can read all of it.
 Frameworks make that impractical.
 
-## How does GitHub Sponsorship work?
+### How does GitHub Sponsorship work?
 
 Visit [github.com/sponsors/keepass-web][ghs] and choose a tier. Monthly sponsors
-at the convenience tier get access to keepassweb.app. One-time contributions
-support maintenance and the bug bounty program but do not unlock keepassweb.app.
+get access to [keepassweb.app][kpo]. One-time contributions support maintenance
+and the bug bounty program but do not unlock keepassweb.app.
+
+---
+
+## Local version (keepassweb.html)
+
+### How do I use the local version?
+
+Download `keepassweb.html` from our [GitHub releases page][releases]. Open it in
+any supported browser. Upload your KDBX database, navigate your secrets, copy and
+paste them, edit if you like. Save by downloading the updated file back to your
+machine.
+
+### Does anything leave my machine?
+
+No. The local version makes no network requests after the file loads. Your KDBX
+file and your master password never leave your browser. You can verify this by
+watching the browser network tab while it runs.
+
+### Why doesn't the local version support cloud storage?
+
+It does — the cloud storage code is present and readable in `keepassweb.html`,
+because we want you to be able to audit exactly what the hosted version does
+before trusting it with your database. Cloud storage simply has no practical
+use when running locally: your files are already on your machine.
+
+---
+
+## Hosted version (keepassweb.app)
+
+### Is keepassweb.app the same file as keepassweb.html?
+
+Yes. The file served at [keepassweb.app][kpo] is identical to the file in our
+GitHub releases. You can verify this by comparing checksums. We assert this
+openly because your trust in the hosted version should be grounded in your
+ability to read and verify the local version — not in our word alone.
+
+### Does keepassweb.app ever see my passwords?
+
+No. Decryption happens entirely in your browser. Your master password is never
+transmitted. Your KDBX file is fetched directly from your cloud storage provider
+by your browser — it does not pass through our servers. You can verify this by
+watching the network tab: after the initial page load, no requests are made to
+keepassweb.app.
+
+### What cloud storage providers are supported?
+
+Google Drive, Dropbox, and OneDrive. Support for WebDAV (Nextcloud, ownCloud,
+and similar) is planned.
+
+### What stops someone from using cloud storage without sponsoring?
+
+Nothing technical. The application is MIT-licensed and its source is public.
+Anyone sufficiently motivated can register their own OAuth application with
+Google, Dropbox, or OneDrive, substitute their own credentials, and run cloud
+storage wherever they like. We make no pretense otherwise. keepassweb.app runs
+on the trust that people who find the software valuable will support it.
+
+### What happens if keepassweb.app shuts down?
+
+Your KDBX file stays in your cloud storage provider — it was never ours to begin
+with. Download `keepassweb.html` from GitHub and open it locally, or switch to
+KeePassXC, Strongbox, KeePassium, or any other KDBX-compatible client. You are
+never locked in.
 
 [kdbx]:https://keepass.info/help/kb/kdbx.html
 [webcrypto]:https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API
 [kpo]:https://keepassweb.app
 [ghs]:https://github.com/sponsors/keepass-web
+[releases]:https://github.com/keepass-web/keepass-web/releases
