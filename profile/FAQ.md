@@ -54,6 +54,13 @@ Every dependency is an attack surface and code you cannot fully audit. We keep
 the codebase small enough that a technically literate user can read all of it.
 Frameworks make that impractical.
 
+### How do I get in touch?
+
+For questions and feedback, [start a GitHub Discussion][discussions]. For bugs,
+[open an issue][issues]. For security vulnerabilities, email
+[security@keepassweb.app](mailto:security@keepassweb.app) — please do not open
+a public issue for security reports.
+
 ### How does GitHub Sponsorship work?
 
 Visit [github.com/sponsors/keepass-web][ghs] and choose a tier. Monthly sponsors
@@ -143,3 +150,5 @@ KDBX-compatible client. You are never locked in.
 [ghpages]:https://pages.github.com
 [ghrepo]:https://github.com/keepass-web/keepass-web.github.io
 [ghorg]:https://github.com/keepass-web
+[discussions]:https://github.com/orgs/keepass-web/discussions
+[issues]:https://github.com/keepass-web/keepass-web/issues

@@ -23,3 +23,5 @@ Not convinced?
 * [Check out our Frequently Asked Questions.](/profile/FAQ.md)
 <!-- * [Read testimonies from sponsors who support KeePass Web development.](/profile/TODO.md) -->
 <!-- * [See our awards and accolades.](/profile/TODO.md) -->
+
+Questions? [Start a GitHub Discussion.](https://github.com/orgs/keepass-web/discussions) Found a bug? [Open an issue.](https://github.com/keepass-web/keepass-web/issues) Reporting a security vulnerability? [security@keepassweb.app](mailto:security@keepassweb.app)
