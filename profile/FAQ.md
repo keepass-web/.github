@@ -29,20 +29,20 @@ for the free local version. The source code is published on GitHub and the
 application is periodically subjected to independent security research through a
 funded bug bounty program.
 
-## Does keepass.online ever see my passwords?
+## Does keepassweb.app ever see my passwords?
 
 No. Decryption happens entirely in your browser. Your master password is never
 transmitted. Your KDBX file is fetched directly from your cloud storage provider
 (Google Drive, Dropbox, OneDrive, etc.) by your browser — it does not pass
 through our servers. You can verify this by watching the network tab: after the
-initial page load, no requests are made to keepass.online.
+initial page load, no requests are made to keepassweb.app.
 
 ## What is the difference between the free version and the premium version?
 
 The free version is a single HTML file you download and open locally. It works
 with any KDBX file on your machine. Nothing leaves your computer.
 
-The premium version is available at [keepass.online][kpo] to
+The premium version is available at [keepassweb.app][kpo] to
 [GitHub Sponsors][ghs]. It connects KeePass Web to your own cloud storage
 provider so you can access your KDBX database from any browser, anywhere,
 without manually transferring files. Your data stays in your storage — we never
@@ -53,7 +53,7 @@ hold it.
 Google Drive, Dropbox, and OneDrive. Support for WebDAV (Nextcloud, ownCloud,
 and similar) is planned.
 
-## What happens if keepass.online shuts down?
+## What happens if keepassweb.app shuts down?
 
 Your KDBX file stays in your cloud storage provider — it was never ours to begin
 with. Open it in KeePassXC, Strongbox, KeePassium, or any other KDBX-compatible
@@ -75,10 +75,10 @@ Frameworks make that impractical.
 ## How does GitHub Sponsorship work?
 
 Visit [github.com/sponsors/keepass-web][ghs] and choose a tier. Monthly sponsors
-at the convenience tier get access to keepass.online. One-time contributions
-support maintenance and the bug bounty program but do not unlock keepass.online.
+at the convenience tier get access to keepassweb.app. One-time contributions
+support maintenance and the bug bounty program but do not unlock keepassweb.app.
 
 [kdbx]:https://keepass.info/help/kb/kdbx.html
 [webcrypto]:https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API
-[kpo]:https://keepass.online
+[kpo]:https://keepassweb.app
 [ghs]:https://github.com/sponsors/keepass-web

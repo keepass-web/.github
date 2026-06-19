@@ -65,7 +65,7 @@ Navigate your secrets, copy and paste them, edit if you like. You can save them
 by downloading a new version and storing it on your local machine. Your file and
 its secrets never leave your machine.
 
-**Premium, hosted use:** Visit [keepass.online][ref8]. Sign in with your GitHub
+**Premium, hosted use:** Visit [keepassweb.app][ref8]. Sign in with your GitHub
 account and support us with a GitHub Sponsorship. Connect your cloud storage
 provider: Google Drive, Dropbox, OneDrive, or similar.  Navigate your storage
 provider and open your KDBX database directly from your storage. Your database
@@ -105,4 +105,4 @@ Not convinced?
 [ref5]:https://keevault.pm/
 [ref6]:https://github.com/lixmal/keepass4web/?tab=readme-ov-file
 [ref7]:https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API
-[ref8]:https://keepass.online
+[ref8]:https://keepassweb.app

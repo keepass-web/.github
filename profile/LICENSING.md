@@ -17,14 +17,14 @@ always. It is never paywalled, never time-delayed, and always current. Security
 fixes ship to everyone immediately.
 
 Premium features are available to [GitHub Sponsors][ghs]. Sponsoring gives you
-access to [keepass.online][kpo], which connects KeePass Web to your own cloud
+access to [keepassweb.app][kpo], which connects KeePass Web to your own cloud
 storage provider (Google Drive, Dropbox, OneDrive, or similar) so you can access
 your KDBX database from any browser, anywhere, without transferring files
 manually.
 
 In short: the tool is free. The convenience is not.
 
-[kpo]:https://keepass.online/
+[kpo]:https://keepassweb.app/
 [mit]:https://mit-license.org/
 [ghs]:https://github.com/sponsors/keepass-web
 
