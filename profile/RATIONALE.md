@@ -60,14 +60,14 @@ source because you deserve to know how your secrets are handled with more than a
 
 ## How Keepass Web Works
 
-**Free, local use:** Download the HTML file from our GitHub releases page. Open
+**Local use:** Download the HTML file from our GitHub releases page. Open
 it in any browser with [WebCrypto][ref7] support (which is every modern desktop
 browser that runs Javascript). Upload your KDBX database into the application.
 Navigate your secrets, copy and paste them, edit if you like. You can save them
 by downloading a new version and storing it on your local machine. Your file and
 its secrets never leave your machine.
 
-**Premium, hosted use:** Visit [keepassweb.app][ref8]. Sign in with your GitHub
+**Hosted use:** Visit [keepassweb.app][ref8]. Sign in with your GitHub
 account and support us with a GitHub Sponsorship. Connect your cloud storage
 provider: Google Drive, Dropbox, OneDrive, or similar.  Navigate your storage
 provider and open your KDBX database directly from your storage. Your database
