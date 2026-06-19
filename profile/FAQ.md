@@ -9,6 +9,16 @@ reads and writes [KDBX][kdbx] database files — the same format used by KeePass
 KeePassXC, Strongbox, KeePassium, and others. It ships as a single HTML file
 with no external dependencies.
 
+### What is the current project status?
+
+KeePass Web is under active development. As of June 2026, the infrastructure is
+in place — the domain, GitHub Pages, sponsorship tiers, and organization
+documentation — but no application has been released yet. We expect to publish
+the first release of `keepassweb.html` with full KDBX read and write support,
+and launch [keepassweb.app][kpo] with cloud storage integration, by
+mid-September 2026. Follow development at
+[github.com/keepass-web][ghorg].
+
 ### What is a KDBX file?
 
 KDBX is an open, well-documented file format for storing passwords and secrets.
@@ -101,10 +111,10 @@ by your browser. You can verify this by watching the network tab: after the
 initial page load, all requests go to your cloud storage provider, not to
 keepassweb.app.
 
-### What cloud storage providers are supported?
+### What cloud storage providers will be supported?
 
-Google Drive, Dropbox, and OneDrive. Support for WebDAV (Nextcloud, ownCloud,
-and similar) is planned.
+Google Drive, Dropbox, and OneDrive at launch. WebDAV (Nextcloud, ownCloud,
+and similar) is planned for a subsequent release.
 
 ### What stops someone from using cloud storage without sponsoring?
 
@@ -132,3 +142,4 @@ KDBX-compatible client. You are never locked in.
 [releases]:https://github.com/keepass-web/keepass-web/releases
 [ghpages]:https://pages.github.com
 [ghrepo]:https://github.com/keepass-web/keepass-web.github.io
+[ghorg]:https://github.com/keepass-web
