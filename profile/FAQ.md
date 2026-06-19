@@ -78,6 +78,13 @@ use when running locally: your files are already on your machine.
 
 ## Hosted version (keepassweb.app)
 
+### Where is keepassweb.app hosted?
+
+keepassweb.app is served by [GitHub Pages][ghpages] — there are no KeePass Web
+servers. The domain resolves to GitHub's infrastructure and serves a static file
+from a public repository. You can verify this by checking the repository at
+[github.com/keepass-web/keepass-web.github.io][ghrepo].
+
 ### Is keepassweb.app the same file as keepassweb.html?
 
 Yes. The file served at [keepassweb.app][kpo] is identical to the file in our
@@ -87,10 +94,11 @@ ability to read and verify the local version — not in our word alone.
 
 ### Does keepassweb.app ever see my passwords?
 
-No. Decryption happens entirely in your browser. Your master password is never
+No. There are no KeePass Web servers — keepassweb.app is a static file on GitHub
+Pages. Decryption happens entirely in your browser. Your master password is never
 transmitted. Your KDBX file is fetched directly from your cloud storage provider
-by your browser — it does not pass through our servers. You can verify this by
-watching the network tab: after the initial page load, no requests are made to
+by your browser. You can verify this by watching the network tab: after the
+initial page load, all requests go to your cloud storage provider, not to
 keepassweb.app.
 
 ### What cloud storage providers are supported?
@@ -108,13 +116,19 @@ on the trust that people who find the software valuable will support it.
 
 ### What happens if keepassweb.app shuts down?
 
-Your KDBX file stays in your cloud storage provider — it was never ours to begin
-with. Download `keepassweb.html` from GitHub and open it locally, or switch to
-KeePassXC, Strongbox, KeePassium, or any other KDBX-compatible client. You are
-never locked in.
+Our entire infrastructure — the hosted app, source code, releases, and
+sponsorships — runs on GitHub. If we lose access to GitHub, or GitHub itself
+disappears, keepassweb.app goes with it. We think that is an acceptable risk:
+GitHub is well-established, the software is MIT-licensed so anyone can fork and
+host it, and most importantly, your KDBX file stays in your own cloud storage
+provider. It was never ours. Download `keepassweb.html` from any surviving fork,
+or open your database in KeePassXC, Strongbox, KeePassium, or any other
+KDBX-compatible client. You are never locked in.
 
 [kdbx]:https://keepass.info/help/kb/kdbx.html
 [webcrypto]:https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API
 [kpo]:https://keepassweb.app
 [ghs]:https://github.com/sponsors/keepass-web
 [releases]:https://github.com/keepass-web/keepass-web/releases
+[ghpages]:https://pages.github.com
+[ghrepo]:https://github.com/keepass-web/keepass-web.github.io
