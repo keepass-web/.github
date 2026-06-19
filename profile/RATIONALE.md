@@ -22,11 +22,13 @@ source code is run locally.
 
 However, the existing browser-based KeePass applications listed on the
 [KeePass for Windows unofficial ports page][ref3] suffer from similar challenges
-(as of March, 2024):
-* [Keeweb][ref4] has over 350 open issues and is two years out of date
-* [Keevault.pm][ref5] is closed source and crashes in DuckDuckGo
-* [Keepass for Web][ref6] is abandoned and the Rust rewrite, frighteningly, has
-  rolled its own "new and unique encryption key"
+(as of June, 2026):
+* [Keeweb][ref4] has 429 open issues and its original author has stopped
+  maintaining it; a community TypeScript fork exists but is a separate project
+* [Keevault.pm][ref5] is closed source and charges a subscription fee
+* [Keepass for Web][ref6] was formally archived and deprecated by its author in
+  January 2024; the Rust rewrite, frighteningly, has rolled its own "new and
+  unique encryption key"
 
 With nothing on the market to satisfy the design goals, it was time to build a
 KDBX-compatible application that is:
