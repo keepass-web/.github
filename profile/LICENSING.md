@@ -1,8 +1,8 @@
 # Licensing, and the KeePass Web Business Model
 
-KeePass Web is a business. GitHub Sponsorships pay for what it costs to run it:
-domain hosting, independent security audits, and the time and attention of KeePass
-Web collaborators.
+Building impeccable software takes time, and independent verification of that
+costs money. GitHub Sponsorships support KeePass Web collaborators and fund the
+security audits that back our claims.
 
 We believe that password and secret management software is too important to be
 poorly done because of lack of funding. But, conversely, we believe walling it

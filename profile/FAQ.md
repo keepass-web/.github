@@ -64,8 +64,8 @@ a public issue for security reports.
 ### How does GitHub Sponsorship work?
 
 Visit [github.com/sponsors/keepass-web][ghs] and choose a tier. Monthly sponsors
-get access to [keepassweb.app][kpo]. One-time contributions support maintenance
-and the bug bounty program but do not unlock keepassweb.app.
+get access to [keepassweb.app][kpo]. One-time contributions support collaborator
+time and security audits but do not unlock keepassweb.app.
 
 ---
 

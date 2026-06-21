@@ -39,8 +39,8 @@ Web, this means having the software application gleefully subjected to hackers
 and security researchers: those hunters who have a financial interest in finding
 security faults in the architecture or implementation of KeePass Web.
 
-To understand how we are able to finance bounty payouts, review our [licensing
-model](/profile/LICENSING.md).
+To understand how we fund security audits and bounty payouts, review our
+[licensing model](/profile/LICENSING.md).
 
 [^1]:https://dictionary.cambridge.org/dictionary/english/impeccable
 [^2]:https://www.oreilly.com/library/view/developing-quality-technical/9780133119046/
