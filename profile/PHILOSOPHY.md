@@ -2,7 +2,7 @@
 
 We believe that software handling other people's secrets must be minimally
 complex, impeccably maintained, obviously trustworthy, and vetted by
-unaffiliated third parties,
+unaffiliated third parties.
 
 ## Core Principles
 
