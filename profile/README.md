@@ -24,4 +24,4 @@ Not convinced?
 <!-- * [Read testimonies from sponsors who support KeePass Web development.](/profile/TODO.md) -->
 <!-- * [See our awards and accolades.](/profile/TODO.md) -->
 
-Questions? [Start a GitHub Discussion.](https://github.com/orgs/keepass-web/discussions) Found a bug? [Open an issue.](https://github.com/keepass-web/keepass-web/issues) Reporting a security vulnerability? [security@keepassweb.app](mailto:security@keepassweb.app)
+Questions? [Start a GitHub Discussion.](https://github.com/keepass-web/source-application/discussions) Found a bug? [Open an issue.](https://github.com/keepass-web/source-application/issues) Reporting a security vulnerability? [security@keepass-web.app](mailto:security@keepass-web.app)
