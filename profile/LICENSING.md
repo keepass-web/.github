@@ -18,7 +18,7 @@ It is never paywalled, never time-delayed, and always current. Security fixes
 ship to everyone immediately.
 
 Convenience features are available to [GitHub Sponsors][ghs]. Sponsoring gives
-you access to [keepassweb.app][kpo], which connects KeePass Web to your own
+you access to [keepass-web.app][kpo], which connects KeePass Web to your own
 cloud storage provider (Google Drive, Dropbox, OneDrive, or similar) so you can
 access your KDBX database from any browser, anywhere, without transferring files
 manually.
@@ -26,6 +26,6 @@ manually.
 The local version is something you host. The hosted version is something we
 host, supported by sponsorships.
 
-[kpo]:https://keepassweb.app/
+[kpo]:https://keepass-web.app/
 [mit]:https://mit-license.org/
 [ghs]:https://github.com/sponsors/keepass-web
