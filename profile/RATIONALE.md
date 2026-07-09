@@ -67,12 +67,13 @@ Navigate your secrets, copy and paste them, edit if you like. You can save them
 by downloading a new version and storing it on your local machine. Your file and
 its secrets never leave your machine.
 
-**Hosted use:** Visit [keepass-web.app][ref8]. Sign in with your GitHub
-account and support us with a GitHub Sponsorship. Connect your cloud storage
-provider: Google Drive, Dropbox, OneDrive, or similar.  Navigate your storage
+**Hosted use:** Visit [keepass-web.app][ref8]. Connect your cloud storage
+provider: Google Drive, Dropbox, OneDrive, or similar. Navigate your storage
 provider and open your KDBX database directly from your storage. Your database
-and your master password never touch our servers; decryption happens entirely in
-your browser.
+and your master password never touch a KeePass Web server — there are none;
+decryption happens entirely in your browser. Cloud storage is free to use — no sponsorship required; if it saves
+you trouble, we invite you to
+[support the project with a GitHub Sponsorship](https://github.com/sponsors/keepass-web).
 
 The hosted version offers a convenient way for you to access a shared KDBX file
 held in your own storage from anywhere, anytime, without transferring files or
@@ -92,7 +93,7 @@ Find out more:
 Ready to start?
 * [Try KeePass Web online, in your browser, right now.](/profile/TODO.md)
 * [Download the most recent public release and run in your local browser.](/profile/TODO.md)
-* [Become a GitHub Sponsor to unlock convenience features.](https://github.com/sponsors/keepass-web)
+* [Support the project with a GitHub Sponsorship.](https://github.com/sponsors/keepass-web)
 
 Not convinced?
 * [Check out our Frequently Asked Questions.](/profile/FAQ.md)

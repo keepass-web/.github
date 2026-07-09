@@ -63,9 +63,10 @@ a public issue for security reports.
 
 ### How does GitHub Sponsorship work?
 
-Visit [github.com/sponsors/keepass-web][ghs] and choose a tier. Monthly sponsors
-get access to [keepass-web.app][kpo]. One-time contributions support collaborator
-time and security audits but do not unlock keepass-web.app.
+Visit [github.com/sponsors/keepass-web][ghs] and choose a tier. Sponsorship funds
+collaborator time and security audits — it does not unlock anything, because
+nothing is gated. [keepass-web.app][kpo] and its cloud storage are open to
+everyone; sponsors simply keep the work going.
 
 ---
 
@@ -123,18 +124,18 @@ keepass-web.app.
 Google Drive, Dropbox, and OneDrive at launch. WebDAV (Nextcloud, ownCloud,
 and similar) is planned for a subsequent release.
 
-### What stops someone from using cloud storage without sponsoring?
+### Do I need to sponsor to use cloud storage?
 
-Nothing technical. The application is MIT-licensed and its source is public.
-Anyone sufficiently motivated can register their own OAuth application with
-Google, Dropbox, or OneDrive, substitute their own credentials, and run cloud
-storage wherever they like. We make no pretense otherwise. keepass-web.app runs
-on the trust that people who find the software valuable will support it.
+No. Cloud storage is open to everyone. The application is MIT-licensed and its
+source is public, and keepass-web.app connects to your provider with your own
+sign-in — no sponsorship required. We ask for support because the work has real
+costs, not because we withhold anything. keepass-web.app runs on the trust that
+people who find the software valuable will help fund it.
 
 ### What happens if keepass-web.app shuts down?
 
-Our entire infrastructure — the hosted app, source code, releases, and
-sponsorships — runs on GitHub. If we lose access to GitHub, or GitHub itself
+Everything the project relies on — the app at keepass-web.app, source code,
+releases, and sponsorships — runs on GitHub. If we lose access to GitHub, or GitHub itself
 disappears, keepass-web.app goes with it. We think that is an acceptable risk:
 GitHub is well-established, the software is MIT-licensed so anyone can fork and
 host it, and most importantly, your KDBX file stays in your own cloud storage
