@@ -78,7 +78,9 @@ KeePass Web provides no storage itself — you connect a provider you already ha
 
 The hosted version offers a convenient way for you to access a shared KDBX file
 held in your own storage from anywhere, anytime, without transferring files or
-dealing with write locks.
+dealing with write locks. It is the same HTML file as the local download, with
+the same cloud connectors built in — the only difference is that GitHub Pages
+serves it, so you need not download and open it first.
 
 ## Bottom Line
 
