@@ -40,9 +40,9 @@ KDBX-compatible application that is:
 
 A password manager is only trustworthy if you can verify what it does. Complex
 software makes that verification impractical for all but the most technically
-literate users. KeePass Web builds trust by shipping as a single, self-contained
-HTML file with no external dependencies: everything it does is right there in
-the un-minified source code. Anyone should be able, with or without AI
+literate users. KeePass Web builds trust by shipping as a multi-page application
+of self-contained HTML pages with no external dependencies: everything each page
+does is right there in the un-minified source code. Anyone should be able, with or without AI
 assistance, to understand exactly what Keepass Web does in a single sitting.
 
 Don't trust us with your password? Great! Read the source code and understand
@@ -60,24 +60,29 @@ source because you deserve to know how your secrets are handled with more than a
 
 ## How Keepass Web Works
 
-**Local use:** Download the HTML file from our GitHub releases page. Open
-it in any browser with [WebCrypto][ref7] support (which is every modern desktop
-browser that runs Javascript). Upload your KDBX database into the application.
-Navigate your secrets, copy and paste them, edit if you like. You can save them
-by downloading a new version and storing it on your local machine. Your file and
-its secrets never leave your machine.
+KeePass Web is a multi-page application (MPA) — a set of self-contained HTML
+pages, each doing one job, that you move between with ordinary links — and it
+behaves the same however you run it. You open a KDBX database, either a file from
+your own machine or one in your own cloud storage provider (Google Drive, Dropbox,
+OneDrive, or similar), and navigate, copy, edit, and save your secrets. Decryption
+happens entirely in your browser; your database and master password never touch a
+KeePass Web server, because there are none. Opening a local file needs no network
+at all; opening from cloud storage talks only to your provider, never to us.
 
-**Hosted use:** Visit [keepass-web.app][ref8]. Connect your cloud storage
-provider: Google Drive, Dropbox, OneDrive, or similar. Navigate your storage
-provider and open your KDBX database directly from your storage. Your database
-and your master password never touch a KeePass Web server — there are none;
-decryption happens entirely in your browser. Cloud storage is free to use — no sponsorship required; if it saves
-you trouble, we invite you to
+**Two ways to run the same pages.** Download them from our GitHub releases page
+and open them in any browser with [WebCrypto][ref7] support (every modern desktop
+browser that runs JavaScript), or open the identical copies served at
+[keepass-web.app][ref8] without downloading first. The pages and every feature
+they have — the cloud connectors included — are the same either way; the only
+difference is whether you fetch them yourself or let GitHub Pages serve them. Not
+having to download first is what makes the served copies handy: you can reach a
+KDBX file held in your own storage from any machine, anytime, without transferring
+files or dealing with write locks.
+
+The connectors are free to use — no sponsorship required, and KeePass Web
+provides no storage itself; you connect a provider you already have. If the
+software saves you trouble, we invite you to
 [support the project with a GitHub Sponsorship](https://github.com/sponsors/keepass-web).
-
-The hosted version offers a convenient way for you to access a shared KDBX file
-held in your own storage from anywhere, anytime, without transferring files or
-dealing with write locks.
 
 ## Bottom Line
 
