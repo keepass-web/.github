@@ -8,8 +8,9 @@ unaffiliated third parties.
 
 Minimalism is the deliberate choice to keep the codebase as small, simple, and
 self-contained as possible, so we:
-* Ship our software as self-contained, single-page HTML distributables, one per
-  job. No install, no server, and no build step required to use them.
+* Ship our software as a multi-page application — self-contained HTML pages, one
+  per job, each an independently auditable distributable. No install, no server,
+  and no build step required to use them.
 * Maintain our own KDBX parser rather than importing a third-party library, so
   we control when security fixes ship and are not blocked by an external
   maintainer.

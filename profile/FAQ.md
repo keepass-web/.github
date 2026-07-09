@@ -6,15 +6,15 @@
 
 KeePass Web is a password manager that runs entirely in your web browser. It
 reads and writes [KDBX][kdbx] database files — the same format used by KeePass,
-KeePassXC, Strongbox, KeePassium, and others. It ships as self-contained, single-page HTML distributables — each doing one
-job — with no external dependencies.
+KeePassXC, Strongbox, KeePassium, and others. It is a multi-page application (MPA): self-contained HTML pages, each doing one
+job, with no external dependencies.
 
 ### What is the current project status?
 
 KeePass Web is under active development. As of June 2026, the infrastructure is
 in place — the domain, GitHub Pages, sponsorship tiers, and organization
 documentation — but no application has been released yet. We expect to publish
-the first release — a set of single-page distributables, with full KDBX read and write support
+the first release — a multi-page application with full KDBX read and write support
 and connectors to your own cloud storage provider — by mid-September 2026,
 published on the [GitHub releases page][releases] and served identically at
 [keepass-web.app][kpo]. Follow development at [github.com/keepass-web][ghorg].
@@ -34,9 +34,9 @@ only browser API KeePass Web requires.
 
 ### How do I know it's safe?
 
-You don't have to take our word for it. Each of KeePass Web's distributables is a
-single, un-minified HTML page. Open the one you are about to use in a text editor
-before you open your database.
+You don't have to take our word for it. Each page of KeePass Web is a single,
+un-minified HTML file. Open the one you are about to use in a text editor before
+you open your database.
 Watch the browser network tab while it runs — you will see no outbound network
 requests. The source code is published on GitHub and the application is
 periodically subjected to independent security research through a funded bug
@@ -74,10 +74,9 @@ keep the work going.
 
 ## Cloud storage connectors
 
-The cloud connectors are single-page distributables of their own — part of
-KeePass Web just like the app and router pages, the same whether you download
-them or open the identical copies at [keepass-web.app][kpo]. They belong to no
-one version.
+The cloud connectors are pages of their own — part of KeePass Web just like the
+app and router pages, the same whether you download them or open the identical
+copies at [keepass-web.app][kpo]. They belong to no one version.
 
 ### Which cloud storage providers will be supported?
 

@@ -13,12 +13,13 @@ features.
 
 ## Open and Sponsor-Funded
 
-All of KeePass Web is open source under the [MIT license][mit], always: the
-single-page distributables that read and write KDBX databases in your browser,
-including the connectors to your own cloud storage provider. It is never paywalled, never
+All of KeePass Web is open source under the [MIT license][mit], always: a
+multi-page application of self-contained HTML pages that read and write KDBX
+databases in your browser, including the connectors to your own cloud storage
+provider. It is never paywalled, never
 time-delayed, and always current. Security fixes ship to everyone immediately.
 
-Those connectors are distributables of the same project — not a separate product,
+Those connectors are pages of the same application — not a separate product,
 and not exclusive to any online copy. Whether you download the files and open them
 yourself or use the identical copies at [keepass-web.app][kpo], you can open your KDBX
 database from any browser, anywhere, straight from your own cloud storage
