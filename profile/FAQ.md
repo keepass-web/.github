@@ -15,8 +15,8 @@ KeePass Web is under active development. As of June 2026, the infrastructure is
 in place — the domain, GitHub Pages, sponsorship tiers, and organization
 documentation — but no application has been released yet. We expect to publish
 the first release of `keepassweb.html` with full KDBX read and write support,
-and launch [keepass-web.app][kpo] with cloud storage integration, by
-mid-September 2026. Follow development at
+and launch [keepass-web.app][kpo] with connectors to your own cloud storage
+provider, by mid-September 2026. Follow development at
 [github.com/keepass-web][ghorg].
 
 ### What is a KDBX file?
@@ -65,8 +65,8 @@ a public issue for security reports.
 
 Visit [github.com/sponsors/keepass-web][ghs] and choose a tier. Sponsorship funds
 collaborator time and security audits — it does not unlock anything, because
-nothing is gated. [keepass-web.app][kpo] and its cloud storage are open to
-everyone; sponsors simply keep the work going.
+nothing is gated. [keepass-web.app][kpo] and its cloud-storage connectors are
+open to everyone; sponsors simply keep the work going.
 
 ---
 
@@ -85,12 +85,12 @@ No. The local version makes no network requests after the file loads. Your KDBX
 file and your master password never leave your browser. You can verify this by
 watching the browser network tab while it runs.
 
-### Why doesn't the local version support cloud storage?
+### Why doesn't the local version connect to cloud storage?
 
-It does — the cloud storage code is present and readable in `keepassweb.html`,
+It can — the cloud-connector code is present and readable in `keepassweb.html`,
 because we want you to be able to audit exactly what the hosted version does
-before trusting it with your database. Cloud storage simply has no practical
-use when running locally: your files are already on your machine.
+before trusting it with your database. Connecting to a provider simply has no
+practical use when running locally: your files are already on your machine.
 
 ---
 
@@ -124,13 +124,14 @@ keepass-web.app.
 Google Drive, Dropbox, and OneDrive at launch. WebDAV (Nextcloud, ownCloud,
 and similar) is planned for a subsequent release.
 
-### Do I need to sponsor to use cloud storage?
+### Do I need to sponsor to connect my cloud storage?
 
-No. Cloud storage is open to everyone. The application is MIT-licensed and its
-source is public, and keepass-web.app connects to your provider with your own
-sign-in — no sponsorship required. We ask for support because the work has real
-costs, not because we withhold anything. keepass-web.app runs on the trust that
-people who find the software valuable will help fund it.
+No. The connectors are open to everyone. The application is MIT-licensed and its
+source is public, and keepass-web.app connects to your own provider with your own
+sign-in — no sponsorship required, and no storage of ours involved. We ask for
+support because the work has real costs, not because we withhold anything.
+keepass-web.app runs on the trust that people who find the software valuable will
+help fund it.
 
 ### What happens if keepass-web.app shuts down?
 

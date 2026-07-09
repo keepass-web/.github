@@ -71,9 +71,10 @@ its secrets never leave your machine.
 provider: Google Drive, Dropbox, OneDrive, or similar. Navigate your storage
 provider and open your KDBX database directly from your storage. Your database
 and your master password never touch a KeePass Web server — there are none;
-decryption happens entirely in your browser. Cloud storage is free to use — no sponsorship required; if it saves
+decryption happens entirely in your browser. The connectors are free to use — no sponsorship required; if they save
 you trouble, we invite you to
 [support the project with a GitHub Sponsorship](https://github.com/sponsors/keepass-web).
+KeePass Web provides no storage itself — you connect a provider you already have.
 
 The hosted version offers a convenient way for you to access a shared KDBX file
 held in your own storage from anywhere, anytime, without transferring files or
