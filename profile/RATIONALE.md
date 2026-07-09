@@ -60,27 +60,28 @@ source because you deserve to know how your secrets are handled with more than a
 
 ## How Keepass Web Works
 
-**Local use:** Download the HTML file from our GitHub releases page. Open
-it in any browser with [WebCrypto][ref7] support (which is every modern desktop
-browser that runs Javascript). Upload your KDBX database into the application.
-Navigate your secrets, copy and paste them, edit if you like. You can save them
-by downloading a new version and storing it on your local machine. Your file and
-its secrets never leave your machine.
+KeePass Web is one HTML file, and it does the same things however you run it: it
+opens a KDBX database — a file from your own machine, or one in your own cloud
+storage provider (Google Drive, Dropbox, OneDrive, or similar) — and lets you
+navigate, copy, edit, and save your secrets. Decryption happens entirely in your
+browser; your database and master password never touch a KeePass Web server,
+because there are none. Opening a local file needs no network at all; opening
+from cloud storage talks only to your provider, never to us.
 
-**Hosted use:** Visit [keepass-web.app][ref8]. Connect your cloud storage
-provider: Google Drive, Dropbox, OneDrive, or similar. Navigate your storage
-provider and open your KDBX database directly from your storage. Your database
-and your master password never touch a KeePass Web server — there are none;
-decryption happens entirely in your browser. The connectors are free to use — no sponsorship required; if they save
-you trouble, we invite you to
+**Two ways to run the same file.** Download it from our GitHub releases page and
+open it in any browser with [WebCrypto][ref7] support (every modern desktop
+browser that runs JavaScript), or open the identical copy served at
+[keepass-web.app][ref8] without downloading first. The file and every feature it
+has — the cloud connectors included — are the same either way; the only
+difference is whether you fetch the file yourself or let GitHub Pages serve it.
+Not having to download first is what makes the served copy handy: you can reach a
+KDBX file held in your own storage from any machine, anytime, without
+transferring files or dealing with write locks.
+
+The connectors are free to use — no sponsorship required, and KeePass Web
+provides no storage itself; you connect a provider you already have. If the
+software saves you trouble, we invite you to
 [support the project with a GitHub Sponsorship](https://github.com/sponsors/keepass-web).
-KeePass Web provides no storage itself — you connect a provider you already have.
-
-The hosted version offers a convenient way for you to access a shared KDBX file
-held in your own storage from anywhere, anytime, without transferring files or
-dealing with write locks. It is the same HTML file as the local download, with
-the same cloud connectors built in — the only difference is that GitHub Pages
-serves it, so you need not download and open it first.
 
 ## Bottom Line
 

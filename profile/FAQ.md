@@ -14,10 +14,10 @@ with no external dependencies.
 KeePass Web is under active development. As of June 2026, the infrastructure is
 in place — the domain, GitHub Pages, sponsorship tiers, and organization
 documentation — but no application has been released yet. We expect to publish
-the first release of `keepassweb.html` with full KDBX read and write support,
-and launch [keepass-web.app][kpo] with connectors to your own cloud storage
-provider, by mid-September 2026. Follow development at
-[github.com/keepass-web][ghorg].
+the first release — the single HTML file, with full KDBX read and write support
+and connectors to your own cloud storage provider — by mid-September 2026,
+published on the [GitHub releases page][releases] and served identically at
+[keepass-web.app][kpo]. Follow development at [github.com/keepass-web][ghorg].
 
 ### What is a KDBX file?
 
