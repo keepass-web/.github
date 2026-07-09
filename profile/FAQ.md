@@ -74,14 +74,24 @@ keep the work going.
 
 ## Cloud storage connectors
 
-The cloud connectors are pages of their own — part of KeePass Web just like the
-app and router pages, the same whether you download them or open the identical
-copies at [keepass-web.app][kpo]. They belong to no one version.
+A cloud connector opens your KDBX database straight from your own cloud storage —
+Google Drive, with more providers over time — instead of from a file sitting on
+the machine in front of you. You sign in to your provider, choose your database,
+and it opens in the browser; your edits are written straight back to the provider.
+The database itself never lands on the local disk.
 
-### Which cloud storage providers will be supported?
+There are two reasons you might want that. On a machine you don't control — a
+library terminal, a kiosk, a borrowed laptop — nothing is left behind afterwards,
+because your vault was never on the disk to begin with. And even on a machine you
+trust, keeping the authoritative copy in your cloud storage means there is no
+second copy to manage: no download-edit-reupload cycle, no stale or forked local
+files, and no unsaved local edits to lose if the machine crashes. Your vault stays
+in one place, reachable from any browser.
 
-Google Drive, Dropbox, and OneDrive at launch. WebDAV (Nextcloud, ownCloud,
-and similar) is planned for a subsequent release.
+### Which cloud storage providers are supported?
+
+Google Drive at the first release. Dropbox, OneDrive, and WebDAV (Nextcloud,
+ownCloud, and similar) are planned for later releases as demand warrants.
 
 ### Do I need to sponsor to connect my cloud storage?
 
@@ -91,34 +101,41 @@ sponsorship required, and no storage of ours involved. We ask for support becaus
 the work has real costs, not because we withhold anything. The project runs on
 the trust that people who find the software valuable will help fund it.
 
-### Do the connectors work in the downloaded file too?
+### Can I use a cloud connector when running the pages from a download?
 
-Yes. The connector code is present and readable in `keepassweb.html`, identical
-to the copy served at keepass-web.app — we want you to be able to audit exactly
-what it does before trusting it with your database. Connecting to a provider
-simply has little practical use once you have downloaded and opened your file
-locally: your database is already on your machine.
+Yes. Two things are independent: where the pages run, and where your database
+lives. You can run the pages from a download or from keepass-web.app, and with
+either you can open a database from a local file or from your cloud storage.
+Running the pages you fetched and audited yourself while keeping your vault in the
+cloud is a perfectly ordinary combination — and often the point, since it keeps
+the database off the machine entirely.
 
 ---
 
-## Local version (the download)
+## Running from a download
 
-### How do I use the download?
+### How do I run it from a download?
 
 Download the release from our [GitHub releases page][releases] and open
-`index.html` in any supported browser; it links to the other distributables.
-Upload your KDBX database, navigate your secrets, copy and paste them, edit if
-you like. Save by downloading the updated file back to your machine.
+`index.html` in any supported browser; it links to the other pages. From there you
+open a KDBX database — a local file, or one in your cloud storage — and navigate,
+copy, edit, and save your secrets. A local database saves by downloading the
+updated file back to your machine; a cloud database is written straight back to
+your provider.
 
 ### Does anything leave my machine?
 
-No. When you open a local database file, the app makes no network requests after
-the page loads. Your KDBX file and your master password never leave your browser.
-You can verify this by watching the browser network tab while it runs.
+That depends on where your database is, not on where the pages came from. Open a
+local database file and nothing leaves your browser after the page has loaded — no
+network requests at all. Open one through a cloud connector and the only traffic is
+between your browser and your storage provider, to fetch and save the database;
+your master password and decrypted secrets still never leave the browser. Either
+way there are no KeePass Web servers in the path, which you can confirm in the
+browser network tab.
 
 ---
 
-## Hosted version (keepass-web.app)
+## Running from keepass-web.app
 
 ### Where is keepass-web.app hosted?
 
@@ -139,9 +156,9 @@ download — not in our word alone.
 
 No. There are no KeePass Web servers — keepass-web.app is a static file on GitHub
 Pages. Decryption happens entirely in your browser. Your master password is never
-transmitted. Your KDBX file is fetched directly from your cloud storage provider
-by your browser. You can verify this by watching the network tab: after the
-initial page load, all requests go to your cloud storage provider, not to
+transmitted. If you open a database from cloud storage, your browser fetches it
+directly from your provider. You can verify this in the network tab: after the
+initial page load, any requests go to your storage provider, never to
 keepass-web.app.
 
 ### What happens if keepass-web.app shuts down?
@@ -151,7 +168,7 @@ releases, and sponsorships — runs on GitHub. If we lose access to GitHub, or G
 disappears, keepass-web.app goes with it. We think that is an acceptable risk:
 GitHub is well-established, the software is MIT-licensed so anyone can fork and
 host it, and most importantly, your KDBX file stays in your own cloud storage
-provider. It was never ours. Download `keepassweb.html` from any surviving fork,
+provider. It was never ours. Download the pages from any surviving fork,
 or open your database in KeePassXC, Strongbox, KeePassium, or any other
 KDBX-compatible client. You are never locked in.
 
