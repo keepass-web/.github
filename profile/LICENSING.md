@@ -14,13 +14,13 @@ features.
 ## Open and Sponsor-Funded
 
 All of KeePass Web is open source under the [MIT license][mit], always: the
-single HTML file that reads and writes KDBX databases in your browser, including
-its connectors to your own cloud storage provider. It is never paywalled, never
+single-page distributables that read and write KDBX databases in your browser,
+including the connectors to your own cloud storage provider. It is never paywalled, never
 time-delayed, and always current. Security fixes ship to everyone immediately.
 
-Those connectors are part of that one file — not a separate product, and not
-exclusive to any online copy. Whether you download the file and open it yourself
-or use the identical copy at [keepass-web.app][kpo], you can open your KDBX
+Those connectors are distributables of the same project — not a separate product,
+and not exclusive to any online copy. Whether you download the files and open them
+yourself or use the identical copies at [keepass-web.app][kpo], you can open your KDBX
 database from any browser, anywhere, straight from your own cloud storage
 provider (Google Drive, Dropbox, OneDrive, or similar), without transferring
 files manually. It is open to every visitor: there is no sponsorship gate, and
@@ -30,7 +30,7 @@ password.
 [GitHub Sponsors][ghs] fund collaborator time and security audits. Sponsorship
 is a voluntary invitation, never a condition of use. The local version is one you
 open from your own disk; the online version at [keepass-web.app][kpo] is not
-hosted by us — GitHub Pages serves the exact same file, verbatim from a public
+hosted by us — GitHub Pages serves the exact same files, verbatim from a public
 repository, and there are no KeePass Web servers. Sponsors fund the work, not any
 hosting.
 

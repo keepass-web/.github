@@ -6,15 +6,15 @@
 
 KeePass Web is a password manager that runs entirely in your web browser. It
 reads and writes [KDBX][kdbx] database files — the same format used by KeePass,
-KeePassXC, Strongbox, KeePassium, and others. It ships as a single HTML file
-with no external dependencies.
+KeePassXC, Strongbox, KeePassium, and others. It ships as self-contained, single-page HTML distributables — each doing one
+job — with no external dependencies.
 
 ### What is the current project status?
 
 KeePass Web is under active development. As of June 2026, the infrastructure is
 in place — the domain, GitHub Pages, sponsorship tiers, and organization
 documentation — but no application has been released yet. We expect to publish
-the first release — the single HTML file, with full KDBX read and write support
+the first release — a set of single-page distributables, with full KDBX read and write support
 and connectors to your own cloud storage provider — by mid-September 2026,
 published on the [GitHub releases page][releases] and served identically at
 [keepass-web.app][kpo]. Follow development at [github.com/keepass-web][ghorg].
@@ -34,8 +34,9 @@ only browser API KeePass Web requires.
 
 ### How do I know it's safe?
 
-You don't have to take our word for it. The entire application is a single,
-un-minified HTML file. Open it in a text editor before you open your database.
+You don't have to take our word for it. Each of KeePass Web's distributables is a
+single, un-minified HTML page. Open the one you are about to use in a text editor
+before you open your database.
 Watch the browser network tab while it runs — you will see no outbound network
 requests. The source code is published on GitHub and the application is
 periodically subjected to independent security research through a funded bug
@@ -73,9 +74,10 @@ keep the work going.
 
 ## Cloud storage connectors
 
-Cloud connectors are part of the single HTML application itself — the same
-whether you download the file or open the identical copy at
-[keepass-web.app][kpo]. They belong to no one version.
+The cloud connectors are single-page distributables of their own — part of
+KeePass Web just like the app and router pages, the same whether you download
+them or open the identical copies at [keepass-web.app][kpo]. They belong to no
+one version.
 
 ### Which cloud storage providers will be supported?
 
@@ -100,20 +102,20 @@ locally: your database is already on your machine.
 
 ---
 
-## Local version (keepassweb.html)
+## Local version (the download)
 
-### How do I use the local version?
+### How do I use the download?
 
-Download `keepassweb.html` from our [GitHub releases page][releases]. Open it in
-any supported browser. Upload your KDBX database, navigate your secrets, copy and
-paste them, edit if you like. Save by downloading the updated file back to your
-machine.
+Download the release from our [GitHub releases page][releases] and open
+`index.html` in any supported browser; it links to the other distributables.
+Upload your KDBX database, navigate your secrets, copy and paste them, edit if
+you like. Save by downloading the updated file back to your machine.
 
 ### Does anything leave my machine?
 
-No. The local version makes no network requests after the file loads. Your KDBX
-file and your master password never leave your browser. You can verify this by
-watching the browser network tab while it runs.
+No. When you open a local database file, the app makes no network requests after
+the page loads. Your KDBX file and your master password never leave your browser.
+You can verify this by watching the browser network tab while it runs.
 
 ---
 
@@ -126,12 +128,13 @@ servers. The domain resolves to GitHub's infrastructure and serves a static file
 from a public repository. You can verify this by checking the repository at
 [github.com/keepass-web/keepass-web.app][ghrepo].
 
-### Is keepass-web.app the same file as keepassweb.html?
+### Are the files at keepass-web.app the same as the ones I download?
 
-Yes. The file served at [keepass-web.app][kpo] is identical to the file in our
-GitHub releases. You can verify this by comparing checksums. We assert this
-openly because your trust in the hosted version should be grounded in your
-ability to read and verify the local version — not in our word alone.
+Yes. Each distributable served at [keepass-web.app][kpo] is byte-for-byte
+identical to the same file in our GitHub releases. You can verify this by
+comparing checksums. We assert this openly because your trust in the served
+copies should be grounded in your ability to read and verify the ones you
+download — not in our word alone.
 
 ### Does keepass-web.app ever see my passwords?
 
