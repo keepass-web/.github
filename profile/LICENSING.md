@@ -7,24 +7,30 @@ security audits that back our claims.
 We believe that password and secret management software is too important to be
 poorly done because of lack of funding. But, conversely, we believe walling it
 behind a proprietary corporate shield is wrong: allegiance to shareholders
-shifts focus from security to profit. To balance these beliefs, we use an open
-core model.
+shifts focus from security to profit. So we keep everything open and free to
+everyone, and fund the work through voluntary sponsorship rather than by gating
+features.
 
-## Open Core Model
+## Open and Sponsor-Funded
 
-The core of KeePass Web — the single HTML file that reads and writes KDBX
-databases in your browser — is open source under the [MIT license][mit], always.
-It is never paywalled, never time-delayed, and always current. Security fixes
-ship to everyone immediately.
+All of KeePass Web — the single HTML file that reads and writes KDBX databases
+in your browser, and every cloud-storage connector built on top of it — is open
+source under the [MIT license][mit], always. It is never paywalled, never
+time-delayed, and always current. Security fixes ship to everyone immediately.
 
-Convenience features are available to [GitHub Sponsors][ghs]. Sponsoring gives
-you access to [keepass-web.app][kpo], which connects KeePass Web to your own
-cloud storage provider (Google Drive, Dropbox, OneDrive, or similar) so you can
-access your KDBX database from any browser, anywhere, without transferring files
-manually.
+That includes [keepass-web.app][kpo], the hosted version, which connects KeePass
+Web to your own cloud storage provider (Google Drive, Dropbox, OneDrive, or
+similar) so you can open your KDBX database from any browser, anywhere, without
+transferring files manually. It is open to every visitor: there is no
+sponsorship gate, and opening a database needs only your provider's own sign-in
+and your master password.
 
-The local version is something you host. The hosted version is something we
-host, supported by sponsorships.
+[GitHub Sponsors][ghs] fund collaborator time and security audits. Sponsorship
+is a voluntary invitation, never a condition of use. The local version is one you
+open from your own disk; the online version at [keepass-web.app][kpo] is not
+hosted by us — GitHub Pages serves the exact same file, verbatim from a public
+repository, and there are no KeePass Web servers. Sponsors fund the work, not any
+hosting.
 
 [kpo]:https://keepass-web.app/
 [mit]:https://mit-license.org/
