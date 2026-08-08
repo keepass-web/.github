@@ -36,12 +36,13 @@ available for inspection. It means the authors are responsive to good faith
 questions.
 
 To be vetted means "to be critically reviewed and evaluated"[^4]. For KeePass
-Web, this means having the software application gleefully subjected to hackers
-and security researchers: those hunters who have a financial interest in finding
-security faults in the architecture or implementation of KeePass Web.
+Web, that review is open to anyone: the source is public, so any hacker,
+researcher, or curious reader can read it, try to break it, and say what they
+find. We don't run or gate that scrutiny behind a program of our own — the
+code being public is what invites it.
 
-To understand how we fund security audits and bounty payouts, review our
-[licensing model](/profile/LICENSING.md).
+See our [licensing model](/profile/LICENSING.md) for how we think about
+sponsorship.
 
 [^1]:https://dictionary.cambridge.org/dictionary/english/impeccable
 [^2]:https://www.oreilly.com/library/view/developing-quality-technical/9780133119046/
