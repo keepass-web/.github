@@ -49,6 +49,39 @@ requests. The source code is published on GitHub and the application is
 periodically subjected to independent security research through a funded bug
 bounty program.
 
+### What suppliers do you rely on?
+
+None that can see your database or your master password — but a few sit
+upstream of how the software reaches you, and knowing them is part of
+verifying it yourself:
+
+- **GitHub** hosts the source, runs CI, builds and signs each release, and
+  serves keepass-web.app via GitHub Pages. It's a single point of
+  centralization we've accepted; see the "What happens if keepass-web.app
+  shuts down?" answer below for the mitigation.
+- **The npm registry**, for build-time tooling only (TypeScript, Biome,
+  jsdom, and similar) — never anything that ships to your browser. Every
+  version is pinned exactly in `package-lock.json`, every package's
+  integrity hash is verified by `npm ci` before install, and none may run an
+  install script — a CI check with no allow-list fails the build if one
+  does. See [Dependency policy][contributing-deps].
+- **A container base image** (`node:22-slim`), pinned by immutable digest
+  rather than a mutable tag, used only to give anyone a reproducible
+  environment to rebuild a release from source in.
+- **GitHub Actions** (checkout, setup-node, CodeQL, attestation) — every
+  action is pinned to a full commit SHA rather than a tag, so a compromised
+  or re-tagged action upstream can't silently change what CI runs.
+- **Sigstore**, which signs and publicly timestamps a build-provenance
+  record for every release, so anyone can confirm which commit produced
+  which published bytes.
+- **Google**, only if you open the Google Drive connector, and only after
+  you click sign in — it loads Google's own SDK, scoped to `drive.file`
+  (files you explicitly pick), never anything broader.
+
+Anyone can independently rebuild a release from source and compare its
+checksum against the published one; see [Reproducing a build][reproducing]
+for the exact steps we use ourselves.
+
 ### Why did you write your own KDBX parser instead of using an existing library?
 
 Security software that depends on third-party libraries inherits that library's
@@ -174,10 +207,21 @@ Everything the project relies on — the app at keepass-web.app, source code,
 releases, and sponsorships — runs on GitHub. If we lose access to GitHub, or GitHub itself
 disappears, keepass-web.app goes with it. We think that is an acceptable risk:
 GitHub is well-established, the software is MIT-licensed so anyone can fork and
-host it, and most importantly, your KDBX file stays in your own cloud storage
-provider. It was never ours. Download the pages from any surviving fork,
-or open your database in KeePassXC, Strongbox, KeePassium, or any other
-KDBX-compatible client. You are never locked in.
+host it, and most importantly, your passwords stay wherever you chose to keep
+them — a USB stick, a local drive, your own cloud storage, wherever. They
+were never ours, and where they live was never tied to whether
+keepass-web.app is up.
+
+Download the pages from any surviving fork, from a copy the [Internet
+Archive's Wayback Machine][wayback] has captured, or open your database
+directly in KeePassXC, Strongbox, KeePassium, or any other KDBX-compatible
+client. You are never locked in.
+
+Better than relying on any fallback: download and keep your own local copy
+of the current release now, from the [releases page][releases], rather than
+waiting for a shutdown to force the issue. It costs nothing, it's the exact
+file keepass-web.app serves, and you can verify that for yourself against
+the published checksum.
 
 [kdbx]:https://keepass.info/help/kb/kdbx.html
 [webcrypto]:https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API
@@ -190,3 +234,6 @@ KDBX-compatible client. You are never locked in.
 [ghorg]:https://github.com/keepass-web
 [discussions]:https://github.com/keepass-web/source-application/discussions
 [issues]:https://github.com/keepass-web/source-application/issues
+[contributing-deps]:https://github.com/keepass-web/source-application/blob/main/docs/CONTRIBUTING.md#dependency-policy
+[reproducing]:https://github.com/keepass-web/source-application/blob/main/docs/REPRODUCING.md
+[wayback]:https://web.archive.org/web/*/https://keepass-web.app/*
