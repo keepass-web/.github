@@ -11,13 +11,20 @@ job, with no external dependencies.
 
 ### What is the current project status?
 
-KeePass Web is under active development. As of June 2026, the infrastructure is
-in place — the domain, GitHub Pages, sponsorship tiers, and organization
-documentation — but no application has been released yet. We expect to publish
-the first release — a multi-page application with full KDBX read and write support
-and connectors to your own cloud storage provider — by mid-September 2026,
+KeePass Web is in the final stages of reaching a stable, GA 1.0 release. The
+infrastructure — the domain, GitHub Pages, sponsorship tiers, and organization
+documentation — has been in place since June 2026, and pre-1.0 versions with
+full KDBX read and write support and a Google Drive connector are already
 published on the [GitHub releases page][releases] and served identically at
-[keepass-web.app][kpo]. Follow development at [github.com/keepass-web][ghorg].
+[keepass-web.app][kpo]. Dropbox and OneDrive connectors, WebDAV support, and
+older KeePass 1.x `.kdb` database support are not part of GA scope; each may
+follow in later releases as demand warrants.
+
+These are beta releases. We'd welcome beta testers willing to put a real (or
+throwaway test) database through its paces and report what breaks —
+[open an issue][issues] with what you found, or follow and comment on
+[our GA tracking issue][ga-issue] to see what's left. Follow development at
+[github.com/keepass-web][ghorg].
 
 ### What is a KDBX file?
 
@@ -177,6 +184,7 @@ KDBX-compatible client. You are never locked in.
 [kpo]:https://keepass-web.app
 [ghs]:https://github.com/sponsors/keepass-web
 [releases]:https://github.com/keepass-web/source-application/releases
+[ga-issue]:https://github.com/keepass-web/source-application/issues/1
 [ghpages]:https://pages.github.com
 [ghrepo]:https://github.com/keepass-web/keepass-web.app
 [ghorg]:https://github.com/keepass-web
