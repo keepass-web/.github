@@ -4,10 +4,15 @@
 
 ### What is KeePass Web?
 
-KeePass Web is a password manager that runs entirely in your web browser. It
-reads and writes [KDBX][kdbx] database files — the same format used by KeePass,
-KeePassXC, Strongbox, KeePassium, and others. It is a multi-page application (MPA): self-contained HTML pages, each doing one
-job, with no external dependencies.
+KeePass Web isn't a service you sign into — it's a handful of HTML files you
+can open directly, with no backend behind them at all. Each page is a single,
+un-minified, self-contained HTML file: open it in a text editor and you're
+reading literally everything it does. There's no server processing your data,
+no account, no extension to install, and no build step to view the source —
+unlike password managers that also encrypt client-side but still run on
+infrastructure you have to trust. It reads and writes [KDBX][kdbx] database
+files — the same format used by KeePass, KeePassXC, Strongbox, KeePassium, and
+others.
 
 ### What is the current project status?
 
@@ -45,9 +50,15 @@ You don't have to take our word for it. Each page of KeePass Web is a single,
 un-minified HTML file. Open the one you are about to use in a text editor before
 you open your database.
 Watch the browser network tab while it runs — you will see no outbound network
-requests. The source code is published on GitHub and the application is
-periodically subjected to independent security research through a funded bug
-bounty program.
+requests. Check the Application (or Storage) tab too: no cookies are set, no
+`localStorage` or `sessionStorage` keys are written, no IndexedDB database is
+created. KeePass Web persists nothing about you or your vault in the browser,
+session or otherwise — close the tab and there is no trace. The one exception
+is a cloud connector's own sign-in provider: if you use Google Drive, Google's
+own sign-in library may set cookies or storage entries under `google.com` to
+manage its session — that's Google's mechanism, on Google's origin, not ours.
+The source code is published on GitHub, open for anyone to read, review, and
+report issues against.
 
 ### What suppliers do you rely on?
 
@@ -76,7 +87,10 @@ verifying it yourself:
   which published bytes.
 - **Google**, only if you open the Google Drive connector, and only after
   you click sign in — it loads Google's own SDK, scoped to `drive.file`
-  (files you explicitly pick), never anything broader.
+  (files you explicitly pick), never anything broader. Any cookies or
+  browser storage that sign-in uses are Google's own, set under its
+  domain — KeePass Web itself never writes a cookie or a storage entry
+  anywhere.
 
 Anyone can independently rebuild a release from source and compare its
 checksum against the published one; see [Reproducing a build][reproducing]
@@ -104,11 +118,12 @@ a public issue for security reports.
 
 ### How does GitHub Sponsorship work?
 
-Visit [github.com/sponsors/keepass-web][ghs] and choose a tier. Sponsorship funds
-collaborator time and security audits — it does not unlock anything, because
-nothing is gated. The whole application — cloud connectors included — is open to
-everyone, whether you download it or open [keepass-web.app][kpo]; sponsors simply
-keep the work going.
+Visit [github.com/sponsors/keepass-web][ghs] and choose a tier. It doesn't
+unlock anything — nothing is gated, and it isn't earmarked for any specific
+cost. Sponsorship is a signal: it tells us the software is valuable enough to
+the people using it that they want to support the people building it. The
+whole application — cloud connectors included — is open to everyone, whether
+you download it or open [keepass-web.app][kpo].
 
 ---
 
@@ -137,9 +152,8 @@ ownCloud, and similar) are planned for later releases as demand warrants.
 
 No. The connectors are open to everyone. The application is MIT-licensed and its
 source is public, and it connects to your own provider with your own sign-in — no
-sponsorship required, and no storage of ours involved. We ask for support because
-the work has real costs, not because we withhold anything. The project runs on
-the trust that people who find the software valuable will help fund it.
+sponsorship required, and no storage of ours involved. Sponsorship isn't a fee
+for access; it's how people who find the software valuable choose to say so.
 
 ### Can I use a cloud connector when running the pages from a download?
 
@@ -176,6 +190,18 @@ browser network tab.
 ---
 
 ## Running from keepass-web.app
+
+### Why the .app domain?
+
+Two reasons. It fits: the whole project is a set of self-contained web pages
+you open directly, no install and no account, so ".app" says exactly what it
+is. More importantly, `.app` is on the [HSTS preload list][hsts-preload]
+built into Chrome, Firefox, Safari, and Edge — every domain under `.app` is
+forced to HTTPS at the browser level, before a single request goes out, with
+no reliance on our TLS configuration, a redirect, or a header we could get
+wrong. For a project whose trust model rests on "watch the network tab and
+verify it yourself," having HTTPS enforced structurally, not by our
+diligence, removes one more thing you'd otherwise have to take our word for.
 
 ### Where is keepass-web.app hosted?
 
@@ -237,3 +263,4 @@ the published checksum.
 [contributing-deps]:https://github.com/keepass-web/source-application/blob/main/docs/CONTRIBUTING.md#dependency-policy
 [reproducing]:https://github.com/keepass-web/source-application/blob/main/docs/REPRODUCING.md
 [wayback]:https://web.archive.org/web/*/https://keepass-web.app/*
+[hsts-preload]:https://hstspreload.org/

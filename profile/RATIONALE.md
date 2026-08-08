@@ -79,6 +79,13 @@ having to download first is what makes the served copies handy: you can reach a
 KDBX file held in your own storage from any machine, anytime, without transferring
 files or dealing with write locks.
 
+**Even on a machine you don't control.** A library terminal, a locked-down
+kiosk, a borrowed laptop — none of these let you install software or leave
+files behind, and none of that matters here. Open keepass-web.app, sign in to
+your own cloud storage, and your vault opens the same way it would at home;
+close the tab when you're done and nothing about it stays on that machine's
+disk, because it was never written there.
+
 The connectors are free to use — no sponsorship required, and KeePass Web
 provides no storage itself; you connect a provider you already have. If the
 software saves you trouble, we invite you to
