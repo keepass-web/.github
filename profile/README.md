@@ -28,6 +28,8 @@ Keep reading to learn more about:
 * [Our motivation for building this software.](/profile/RATIONALE.md)
 * [Our design and development philosophies.](/profile/PHILOSOPHY.md)
 * [Our licensing model.](/profile/LICENSING.md)
+* [Our terms of use.](/profile/TERMS.md)
+* [Our privacy policy.](/profile/PRIVACY.md)
 
 Ready to start?
 * [Try KeePass Web online, in your browser, right now.](/profile/TODO.md)
