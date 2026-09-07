@@ -1,6 +1,6 @@
 ## Welcome to KeePass Web
 
-**A password manager with no backend — self-contained HTML files that read
+**A password manager with no backend, just self-contained HTML files that read
 and write your KeePass database, wherever it lives.**
 
 Do you find yourself:
@@ -10,19 +10,19 @@ Do you find yourself:
 
 Then KeePass Web may be for you!
 
-**Three choices, and they're independent of each other:**
-1. **Where your database lives** — a USB stick, your laptop's drive, or your
-   own cloud storage (Google Drive, with more providers over time).
-2. **Where the app's code comes from** — download it once and run it offline
-   forever, or open the identical pages at keepass-web.app without installing
-   anything.
-3. **What the machine in front of you allows** — even on a kiosk or library
-   terminal where you can't install anything or save a file, keepass-web.app
-   plus your own cloud storage means nothing ever touches that machine's
-   disk, and nothing is left behind when you walk away.
+With KeePass Web, you're in control of...
+1. Where your database lives: a USB stick, your computers's hard drive, or
+   in your cloud storage account.
+2. Where the app's code comes from: download it once and run it offline
+   forever, or open the provably identical pages at [keepass-web.app](https://keepass-web.app)
+   without ever installing anything.
+4. What the computer allows: even on a kiosk or library terminal where
+   you can't install anything or save a file, [keepass-web.app](https://keepass-web.app)
+   plus your own cloud storage means nothing ever touches that computer's
+   disk and nothing is left behind when you walk away.
 
-Mix and match freely: run a downloaded copy against a cloud database, or the
-hosted copy against a local file. Neither choice depends on the other.
+Mix and match to suit your situation: run a downloaded copy against a cloud
+database, or the hosted copy against a local file.
 
 Keep reading to learn more about:
 * [Our motivation for building this software.](/profile/RATIONALE.md)
