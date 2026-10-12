@@ -4,6 +4,7 @@
 
 ### What is KeePass Web?
 
+KeePass Web is a password manager. Unlike other password managers, though,
 KeePass Web isn't a service you sign into — it's a handful of HTML files you
 can open directly, with no backend behind them at all. Each page is a single,
 un-minified, self-contained HTML file: open it in a text editor and you're
