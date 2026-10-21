@@ -110,12 +110,17 @@ Every dependency is an attack surface and code you cannot fully audit. We keep
 the codebase small enough that a technically literate user can read all of it.
 Frameworks make that impractical.
 
+### How do I report a security vulnerability?
+
+Privately, please, rather than in a public issue. Our [security policy][security]
+explains how, what to include, and which releases receive fixes.
+
 ### How do I get in touch?
 
 For questions and feedback, [start a GitHub Discussion][discussions]. For bugs,
-[open an issue][issues]. For security vulnerabilities, email
-[security@keepass-web.app](mailto:security@keepass-web.app) — please do not open
-a public issue for security reports.
+[open an issue][issues]. For security vulnerabilities, see our
+[security policy][security] — please do not open a public issue for security
+reports.
 
 ### How does GitHub Sponsorship work?
 
@@ -261,6 +266,7 @@ the published checksum.
 [ghorg]:https://github.com/keepass-web
 [discussions]:https://github.com/keepass-web/source-application/discussions
 [issues]:https://github.com/keepass-web/source-application/issues
+[security]:https://github.com/keepass-web/.github/blob/main/SECURITY.md
 [contributing-deps]:https://github.com/keepass-web/source-application/blob/main/docs/CONTRIBUTING.md#dependency-policy
 [reproducing]:https://github.com/keepass-web/source-application/blob/main/docs/REPRODUCING.md
 [wayback]:https://web.archive.org/web/*/https://keepass-web.app/*
