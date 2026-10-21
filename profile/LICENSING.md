@@ -13,17 +13,8 @@ everyone.
 
 All of KeePass Web is open source under the [MIT license][mit], always: a
 multi-page application of self-contained HTML pages that read and write KDBX
-databases in your browser, including the connectors to your own cloud storage
-provider. It is never paywalled, never time-delayed, and always current.
-Security fixes ship to everyone immediately.
-
-Those connectors are pages of the same application — not a separate product,
-and not exclusive to any online copy. Whether you download the files and open
-them yourself or use the identical copies at [keepass-web.app][kpo], you can
-open your KDBX database from any browser, anywhere, straight from your own
-cloud storage provider (e.g., Google Drive), without transferring files
-manually. Opening a database needs only your provider's own sign-in and your
-master password.
+databases in your browser. It is never paywalled, never time-delayed, and
+always current. Security fixes ship to everyone immediately.
 
 The local version is one you open from your own disk; the online version at
 [keepass-web.app][kpo] is not hosted by us — GitHub Pages serves the exact

@@ -123,10 +123,9 @@ reports.
 
 ### What does KeePass Web cost?
 
-Nothing. KeePass Web is free to use, the whole application and its cloud
-connectors included, whether you download it or open [keepass-web.app][kpo].
-If you find it valuable, we encourage you to [follow our organization][ghorg],
-[star our repositories][ghrepos], and [become a sponsor][ghs].
+Nothing; KeePass Web is free to use. If you find it valuable, we encourage you
+to [follow our organization][ghorg], [star our repositories][ghrepos], and
+[become a sponsor][ghs].
 
 ---
 
@@ -149,11 +148,6 @@ in one place, reachable from any browser.
 ### Which cloud storage providers are supported?
 
 Google Drive.
-
-### Do I need to sponsor to connect my cloud storage?
-
-No. Like the rest of KeePass Web, the connectors are free to use. A connector
-needs only your own provider's sign-in, and no storage of ours is involved.
 
 ### Can I use a cloud connector when running the pages from a download?
 

@@ -86,8 +86,7 @@ your own cloud storage, and your vault opens the same way it would at home;
 close the tab when you're done and nothing about it stays on that machine's
 disk, because it was never written there.
 
-KeePass Web is free to use, the connectors included, and provides no storage
-itself; you connect a provider you already have.
+KeePass Web provides no storage itself; you connect a provider you already have.
 
 ## Bottom Line
 
