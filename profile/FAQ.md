@@ -22,9 +22,8 @@ infrastructure — the domain, GitHub Pages, sponsorship tiers, and organization
 documentation — has been in place since June 2026, and pre-1.0 versions with
 full KDBX read and write support and a Google Drive connector are already
 published on the [GitHub releases page][releases] and served identically at
-[keepass-web.app][kpo]. Dropbox and OneDrive connectors, WebDAV support, and
-older KeePass 1.x `.kdb` database support are not part of GA scope; each may
-follow in later releases as demand warrants.
+[keepass-web.app][kpo]. Older KeePass 1.x `.kdb` database support is not part
+of GA scope and may follow in a later release as demand warrants.
 
 These are beta releases. We'd welcome beta testers willing to put a real (or
 throwaway test) database through its paces and report what breaks —
@@ -122,23 +121,21 @@ For questions and feedback, [start a GitHub Discussion][discussions]. For bugs,
 [security policy][security] — please do not open a public issue for security
 reports.
 
-### How does GitHub Sponsorship work?
+### What does KeePass Web cost?
 
-Visit [github.com/sponsors/keepass-web][ghs] and choose a tier. It doesn't
-unlock anything — nothing is gated, and it isn't earmarked for any specific
-cost. Sponsorship is a signal: it tells us the software is valuable enough to
-the people using it that they want to support the people building it. The
-whole application — cloud connectors included — is open to everyone, whether
-you download it or open [keepass-web.app][kpo].
+Nothing. KeePass Web is free to use, the whole application and its cloud
+connectors included, whether you download it or open [keepass-web.app][kpo].
+If you find it valuable, we encourage you to [follow our organization][ghorg],
+[star our repositories][ghrepos], and [become a sponsor][ghs].
 
 ---
 
 ## Cloud storage connectors
 
-A cloud connector opens your KDBX database straight from your own cloud storage —
-Google Drive, with more providers over time — instead of from a file sitting on
-the machine in front of you. You sign in to your provider, choose your database,
-and it opens in the browser; your edits are written straight back to the provider.
+A cloud connector opens your KDBX database straight from your own cloud storage
+(e.g., Google Drive) instead of from a file sitting on the machine in front of
+you. You sign in to your provider, choose your database, and it opens in the
+browser; your edits are written straight back to the provider.
 The database itself never lands on the local disk.
 
 There are two reasons you might want that. On a machine you don't control — a
@@ -151,15 +148,12 @@ in one place, reachable from any browser.
 
 ### Which cloud storage providers are supported?
 
-Google Drive at the first release. Dropbox, OneDrive, and WebDAV (Nextcloud,
-ownCloud, and similar) are planned for later releases as demand warrants.
+Google Drive.
 
 ### Do I need to sponsor to connect my cloud storage?
 
-No. The connectors are open to everyone. The application is MIT-licensed and its
-source is public, and it connects to your own provider with your own sign-in — no
-sponsorship required, and no storage of ours involved. Sponsorship isn't a fee
-for access; it's how people who find the software valuable choose to say so.
+No. Like the rest of KeePass Web, the connectors are free to use. A connector
+needs only your own provider's sign-in, and no storage of ours is involved.
 
 ### Can I use a cloud connector when running the pages from a download?
 
@@ -264,6 +258,7 @@ the published checksum.
 [ghpages]:https://pages.github.com
 [ghrepo]:https://github.com/keepass-web/keepass-web.app
 [ghorg]:https://github.com/keepass-web
+[ghrepos]:https://github.com/orgs/keepass-web/repositories
 [discussions]:https://github.com/keepass-web/source-application/discussions
 [issues]:https://github.com/keepass-web/source-application/issues
 [security]:https://github.com/keepass-web/.github/blob/main/SECURITY.md

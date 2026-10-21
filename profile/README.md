@@ -34,7 +34,8 @@ Keep reading to learn more about:
 Ready to start?
 * [Try KeePass Web online, in your browser, right now.](/profile/TODO.md)
 * [Download the most recent public release and run in your local browser.](/profile/TODO.md)
-* [Support the project with a GitHub Sponsorship.](https://github.com/sponsors/keepass-web)
+
+KeePass Web is free to use. Find it valuable? [Follow our organization](https://github.com/keepass-web), [star our repositories](https://github.com/orgs/keepass-web/repositories), and [become a sponsor](https://github.com/sponsors/keepass-web).
 
 Not convinced?
 * [Check out our Frequently Asked Questions.](/profile/FAQ.md)
