@@ -1,7 +1,7 @@
 # Licensing, and the KeePass Web Business Model
 
-KeePass Web is free to use. Those who find it valuable are encouraged to
-[follow our organization][ghorg], [star our repositories][ghrepos], and
+KeePass Web is free to use. If it saves you trouble,
+[tell someone who'd like it][share], [star the source repository][repo], or
 [become a sponsor][ghs].
 
 We believe that password and secret management software is too important to
@@ -23,6 +23,6 @@ servers.
 
 [kpo]:https://keepass-web.app/
 [mit]:https://mit-license.org/
-[ghorg]:https://github.com/keepass-web
-[ghrepos]:https://github.com/orgs/keepass-web/repositories
+[share]:/profile/FAQ.md#how-can-i-help
+[repo]:https://github.com/keepass-web/source-application
 [ghs]:https://github.com/sponsors/keepass-web

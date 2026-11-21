@@ -123,9 +123,14 @@ reports.
 
 ### What does KeePass Web cost?
 
-Nothing; KeePass Web is free to use. If you find it valuable, we encourage you
-to [follow our organization][ghorg], [star our repositories][ghrepos], and
-[become a sponsor][ghs].
+Nothing; KeePass Web is free to use.
+
+### How can I help?
+
+Let's be honest: you'd rather hear about a password manager from a friend than
+from us. So if KeePass Web works for you, tell someone. Star [the repository][repo]
+so the next person to find it on GitHub knows they aren't the first. And if you
+want to back the people building it, [sponsor us][ghs].
 
 ---
 
@@ -252,7 +257,7 @@ the published checksum.
 [ghpages]:https://pages.github.com
 [ghrepo]:https://github.com/keepass-web/keepass-web.app
 [ghorg]:https://github.com/keepass-web
-[ghrepos]:https://github.com/orgs/keepass-web/repositories
+[repo]:https://github.com/keepass-web/source-application
 [discussions]:https://github.com/keepass-web/source-application/discussions
 [issues]:https://github.com/keepass-web/source-application/issues
 [security]:https://github.com/keepass-web/.github/blob/main/SECURITY.md
