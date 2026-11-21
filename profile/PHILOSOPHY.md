@@ -27,7 +27,7 @@ manifests itself in KeePass Web through:
 * Enforced code style through automated linting and formatting. No exceptions, no
   overrides, no "we'll fix it later."
 * Documentation that is easy to use, understand, and find[^2].
-* No verified issues older than 90 days across the Keepass Web organization.
+* No verified issues older than 90 days across the KeePass Web organization.
 
 Trustworthiness is the "firm belief in the integrity, ability, or character of a
 person or thing."[^3] What does that mean for KeePass Web? It means there's a
@@ -41,8 +41,8 @@ researcher, or curious reader can read it, try to break it, and say what they
 find. We don't run or gate that scrutiny behind a program of our own — the
 code being public is what invites it.
 
-See our [licensing model](/profile/LICENSING.md) for how we think about
-sponsorship.
+KeePass Web is free to use; see our [licensing model](/profile/LICENSING.md)
+for why.
 
 [^1]:https://dictionary.cambridge.org/dictionary/english/impeccable
 [^2]:https://www.oreilly.com/library/view/developing-quality-technical/9780133119046/

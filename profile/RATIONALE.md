@@ -43,7 +43,7 @@ software makes that verification impractical for all but the most technically
 literate users. KeePass Web builds trust by shipping as a multi-page application
 of self-contained HTML pages with no external dependencies: everything each page
 does is right there in the un-minified source code. Anyone should be able, with or without AI
-assistance, to understand exactly what Keepass Web does in a single sitting.
+assistance, to understand exactly what KeePass Web does in a single sitting.
 
 Don't trust us with your password? Great! Read the source code and understand
 how it'll work before you upload your database file. Or, just watch the browser
@@ -58,16 +58,16 @@ We choose simplicity because vulnerabilities hide in complexity. We chose open
 source because you deserve to know how your secrets are handled with more than a
 "trust us" statement.
 
-## How Keepass Web Works
+## How KeePass Web Works
 
 KeePass Web is a multi-page application (MPA) — a set of self-contained HTML
 pages, each doing one job, that you move between with ordinary links — and it
 behaves the same however you run it. You open a KDBX database, either a file from
-your own machine or one in your own cloud storage provider (Google Drive, Dropbox,
-OneDrive, or similar), and navigate, copy, edit, and save your secrets. Decryption
-happens entirely in your browser; your database and master password never touch a
-KeePass Web server, because there are none. Opening a local file needs no network
-at all; opening from cloud storage talks only to your provider, never to us.
+your own machine or one in your own cloud storage provider (e.g., Google Drive),
+and navigate, copy, edit, and save your secrets. Decryption happens entirely in
+your browser; your database and master password never touch a KeePass Web
+server, because there are none. Opening a local file needs no network at all;
+opening from cloud storage talks only to your provider, never to us.
 
 **Two ways to run the same pages.** Download them from our GitHub releases page
 and open them in any browser with [WebCrypto][ref7] support (every modern desktop
@@ -86,10 +86,7 @@ your own cloud storage, and your vault opens the same way it would at home;
 close the tab when you're done and nothing about it stays on that machine's
 disk, because it was never written there.
 
-The connectors are free to use — no sponsorship required, and KeePass Web
-provides no storage itself; you connect a provider you already have. If the
-software saves you trouble, we invite you to
-[support the project with a GitHub Sponsorship](https://github.com/sponsors/keepass-web).
+KeePass Web provides no storage itself; you connect a provider you already have.
 
 ## Bottom Line
 
@@ -105,7 +102,11 @@ Find out more:
 Ready to start?
 * [Try KeePass Web online, in your browser, right now.](/profile/TODO.md)
 * [Download the most recent public release and run in your local browser.](/profile/TODO.md)
-* [Support the project with a GitHub Sponsorship.](https://github.com/sponsors/keepass-web)
+
+Like it?
+* [Tell a friend who keeps their passwords in KeePass.](/profile/FAQ.md#how-can-i-help)
+* [Star the source repository.](https://github.com/keepass-web/source-application)
+* [Become a GitHub Sponsor.](https://github.com/sponsors/keepass-web)
 
 Not convinced?
 * [Check out our Frequently Asked Questions.](/profile/FAQ.md)
