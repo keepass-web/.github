@@ -156,12 +156,26 @@ Google Drive.
 
 ### Can I use a cloud connector when running the pages from a download?
 
-Yes. Two things are independent: where the pages run, and where your database
-lives. You can run the pages from a download or from keepass-web.app, and with
-either you can open a database from a local file or from your cloud storage.
-Running the pages you fetched and audited yourself while keeping your vault in the
-cloud is a perfectly ordinary combination — and often the point, since it keeps
-the database off the machine entirely.
+Yes, with one extra step. Running the pages you fetched and audited yourself
+while keeping your vault in the cloud is a perfectly ordinary combination — and
+often the point, since it keeps the database off the machine entirely.
+
+The extra step is Google's: it only lets you sign in from a web address it
+knows, and a page opened straight from disk isn't on a web address at all. Try
+it and Google answers "Access blocked." So serve the downloaded files from your
+own machine, at the one local address Google knows for KeePass Web. In the
+folder holding the files, run:
+
+```sh
+python3 -m http.server 57932 --bind 127.0.0.1
+```
+
+Then browse to `http://localhost:57932/`. It has to be exactly that address;
+`http://127.0.0.1:57932/` or another port won't sign in. Any web server will do in place of
+Python, as long as the address matches, and binding to `127.0.0.1` keeps it off
+your network. Why 57932? It spells KPWEB on a phone keypad.
+
+A local database file needs none of this; open `index.html` from disk and go.
 
 ---
 
@@ -171,10 +185,10 @@ the database off the machine entirely.
 
 Download the release from our [GitHub releases page][releases] and open
 `index.html` in any supported browser; it links to the other pages. From there you
-open a KDBX database — a local file, or one in your cloud storage — and navigate,
-copy, edit, and save your secrets. A local database saves by downloading the
-updated file back to your machine; a cloud database is written straight back to
-your provider.
+open a KDBX database file and navigate, copy, edit, and save your secrets; it
+saves by downloading the updated file back to your machine. For a database in
+your cloud storage, [serve the files first][download-cloud], and it's written
+straight back to your provider.
 
 ### Does anything leave my machine?
 
@@ -264,4 +278,5 @@ the published checksum.
 [contributing-deps]:https://github.com/keepass-web/source-application/blob/main/docs/CONTRIBUTING.md#dependency-policy
 [reproducing]:https://github.com/keepass-web/source-application/blob/main/docs/REPRODUCING.md
 [wayback]:https://web.archive.org/web/*/https://keepass-web.app/*
+[download-cloud]:#can-i-use-a-cloud-connector-when-running-the-pages-from-a-download
 [hsts-preload]:https://hstspreload.org/
