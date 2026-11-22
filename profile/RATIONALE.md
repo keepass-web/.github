@@ -100,8 +100,8 @@ Find out more:
 * [Our licensing model.](/profile/LICENSING.md)
 
 Ready to start?
-* [Try KeePass Web online, in your browser, right now.](/profile/TODO.md)
-* [Download the most recent public release and run in your local browser.](/profile/TODO.md)
+* [Try KeePass Web online, in your browser, right now.](https://keepass-web.app)
+* [Download the most recent public release and run in your local browser.](https://github.com/keepass-web/source-application/releases/latest)
 
 Like it?
 * [Tell a friend who keeps their passwords in KeePass.](/profile/FAQ.md#how-can-i-help)
